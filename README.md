@@ -2,6 +2,12 @@
 
 ****
  
+***<a href="https://heimiao.github.io/heimao_blog//static/myionic/www/index.html">点击我查看dmeo案例</a>***
+<a href="https://heimiao.github.io/heimao_blog//static/myionic/www/index.html"> 
+![img](https://heimiao.github.io/heimao_blog/image/myionic/componentList.jpg)
+</a>
+
+
 ### 安装和运行
 
 	// 安装全局的ionic和cordova打包工具
@@ -33,7 +39,7 @@
 	http://localhost:8080
 
  
-###手机端运行
+### 手机端运行
 
 	/ 添加iOS项目
 	$ ionic platform add ios
@@ -48,11 +54,6 @@
 	$ ionic cordova emulate android
  
 
-***<a href="https://heimiao.github.io/heimao_blog//static/myionic/www/index.html">点击我查看dmeo案例</a>***
-
-<a href="https://heimiao.github.io/heimao_blog//static/myionic/www/index.html"> 
-![img](https://heimiao.github.io/heimao_blog/image/myionic/componentList.jpg)
-</a>
 
 
  
