@@ -1,0 +1,159 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>列表(lists)</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			基本
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+				    {{ item.name }}
+				  </button>
+			</ion-list>
+
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			去掉底部线
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-lines>
+				<button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+				    {{ item.name }}
+				  </button>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			分割线
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list inset>
+				<button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+				    {{ item.color }}
+				  </button>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			分组
+		</ion-card-header>
+		<ion-card-content>
+			<ion-item-group *ngFor="let item of items">
+				<ion-item-divider color="light">{{item.type}}</ion-item-divider>
+				<ion-item *ngFor="let childItem of item.child" (click)="itemSelected(item)">{{childItem.name}}</ion-item>
+			</ion-item-group>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			添加列表头
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-list-header>
+					英雄列表
+				</ion-list-header>
+				<ion-item *ngFor="let item of items" (click)="itemSelected(item)"> {{ item.name }}</ion-item>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			添加图标
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+					<ion-icon name="leaf" item-start></ion-icon>
+					{{ item.name }}
+					<ion-icon name="rose" item-end></ion-icon>
+				</ion-item>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			添加图像
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item *ngFor="let item of heros" (click)="itemSelected(item)">
+					<ion-avatar item-start>
+						<img src="{{item.imgUrl}}">
+					</ion-avatar>
+					<h2>{{item.name}}</h2>
+					<p>{{item.intro}}</p>
+				</ion-item>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			滑动列表
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item-sliding *ngFor="let item of heros" (click)="itemSelected(item)">
+					<ion-item>
+						<ion-avatar item-start>
+							<img src="{{item.imgUrl}}">
+						</ion-avatar>
+						<h2>{{item.name}}</h2>
+					</ion-item>
+					<ion-item-options side="right">
+						<button ion-button color="primary">
+					        <ion-icon name="text"></ion-icon>
+					        删除
+					      </button>
+						<button ion-button color="secondary">
+					        <ion-icon name="call"></ion-icon>
+					        电话
+					      </button>
+					</ion-item-options>
+					<ion-item-options side="left">
+						<button ion-button color="primary">
+				        <ion-icon name="mail"></ion-icon>
+				        邮箱
+				      </button>
+					</ion-item-options>
+				</ion-item-sliding>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			缩略图
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item *ngFor="let item of heros" (click)="itemSelected(item)">
+					<ion-thumbnail item-start>
+						<img src="{{item.imgUrl}}">
+					</ion-thumbnail>
+					<h2>{{item.name}}</h2>
+					<p>{{ item.intro }}</p>
+					<button ion-button clear item-end>View</button>
+				</ion-item>
+			</ion-list>
+			<a class="more" href="https://ionicframework.com/docs/api/components/list/List/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

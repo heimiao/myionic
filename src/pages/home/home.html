@@ -1,0 +1,11 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>组件列表</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-item-group *ngFor="let item of items">
+		<ion-item-divider color="light">{{item.name}}</ion-item-divider>
+		<ion-item *ngFor="let childItem of item.childAry" (click)="routerLink(childItem)">{{childItem.title}}</ion-item>
+	</ion-item-group>
+</ion-content>

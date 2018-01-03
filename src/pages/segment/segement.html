@@ -1,0 +1,90 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>节点按钮(segment)</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<!--
+    	作者：maweichao90@126.com
+    	时间：2018-01-02
+    	描述：图标的方式
+    -->
+	<ion-card>
+		<ion-card-header>
+			基本使用(图标的方式)
+		</ion-card-header>
+		<ion-card-content>
+			{{icons}}
+			<ion-segment [(ngModel)]="icons" color="secondary">
+				<ion-segment-button value="camera">
+					<ion-icon name="camera"></ion-icon>
+				</ion-segment-button>
+				<ion-segment-button value="bookmark">
+					<ion-icon name="bookmark"></ion-icon>
+				</ion-segment-button>
+			</ion-segment>
+			<a class="more" href="https://ionicframework.com/docs/components/#segment">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<!--
+    	作者：maweichao90@126.com
+    	时间：2018-01-02
+    	描述：按钮方式
+    -->
+	<ion-card>
+		<ion-card-header>
+			按钮的方式
+		</ion-card-header>
+		<ion-card-content>
+			{{relationship}}
+			<ion-segment [(ngModel)]="relationship" color="primary" (ionChange)="segmentChanged($event)">
+				<ion-segment-button value="mage" (ionSelect)="selecteds('mage')">
+					法师
+				</ion-segment-button>
+				<ion-segment-button value="assassin" (ionSelect)="selecteds('assassin')">
+					刺客
+				</ion-segment-button>
+			</ion-segment>
+
+			<ion-list inset>
+				<ion-item *ngFor="let item of heros">
+					<ion-thumbnail item-start>
+						<img src="{{item.imgUrl}}">
+					</ion-thumbnail>
+					<h2>{{item.name}}</h2>
+					<p>{{ item.intro }}</p>
+				</ion-item>
+			</ion-list>
+
+			<a class="more" href="https://ionicframework.com/docs/components/#segment">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<!--
+    	作者：maweichao90@126.com
+    	时间：2018-01-02
+    	描述：表单方式
+    -->
+	<ion-card>
+		<ion-card-header>
+			表单方式
+		</ion-card-header>
+		<ion-card-content>
+			<p>Form value: {{ myForm.value | json }}</p>
+			<p>Form status: {{ myForm.status | json }}</p>
+			<form [formGroup]="myForm">
+				<ion-segment formControlName="mapStyle" color="danger">
+					<ion-segment-button value="standard">
+						Standard
+					</ion-segment-button>
+					<ion-segment-button value="hybrid">
+						Hybrid
+					</ion-segment-button>
+					<ion-segment-button value="sat">
+						Satellite
+					</ion-segment-button>
+				</ion-segment>
+			</form>
+			<a class="more" href="https://ionicframework.com/docs/components/#segment">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

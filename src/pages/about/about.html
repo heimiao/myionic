@@ -1,0 +1,78 @@
+<style type="text/css">
+	.container {
+		position: relative;
+		min-height: 400px;
+	}
+	
+	.tabs-ios .tabbar {
+		opacity: 1;
+	}
+</style>
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			选项卡(tab)
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<p>
+		tab这个组件贯穿整个demo，所以我单独把tab放到tab下的一个选项卡下，来进行介绍。也省的我去创建一个新的组件
+	</p>
+
+	<ion-card>
+		<ion-card-header>
+			基本使用（纯文本）
+		</ion-card-header>
+		<ion-card-content class="container">
+			<a class="more" href="https://ionicframework.com/docs/api/components/tabs/Tab/">参数传递API</a>
+			<ion-tabs>
+				<ion-tab [root]="radios" tabTitle="轮播"></ion-tab>
+				<ion-tab [root]="liebiao" tabTitle="列表"></ion-tab>
+				<ion-tab [root]="daohang" tabTitle="导航"></ion-tab>
+			</ion-tabs>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			图标
+		</ion-card-header>
+		<ion-card-content class="container">
+			<a class="more" href="https://ionicframework.com/docs/api/components/tabs/Tab/">更多信息</a>
+			<ion-tabs>
+				<ion-tab tabIcon="radios" [root]="tab1"></ion-tab>
+				<ion-tab tabIcon="liebiao" [root]="tab2"></ion-tab>
+				<ion-tab tabIcon="daohang" [root]="tab3"></ion-tab>
+			</ion-tabs>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			文本和图标混排
+		</ion-card-header>
+		<ion-card-content class="container">
+			<a class="more" href="https://ionicframework.com/docs/api/components/tabs/Tab/">更多信息</a>
+			<ion-tabs>
+				<ion-tab [root]="radios" tabTitle="轮播" tabIcon="contact"></ion-tab>
+				<ion-tab [root]="liebiao" tabTitle="列表" tabIcon="analytics"></ion-tab>
+				<ion-tab [root]="daohang" tabTitle="导航" tabIcon="settings"></ion-tab>
+			</ion-tabs>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			带有徽章的图文混排
+		</ion-card-header>
+		<ion-card-content class="container">
+			<a class="more" href="https://ionicframework.com/docs/api/components/tabs/Tab/">更多信息</a>
+			<ion-tabs>
+				<ion-tab [root]="radios" tabTitle="轮播" tabBadge="3" tabIcon="contact"></ion-tab>
+				<ion-tab [root]="liebiao" tabTitle="列表" tabBadge="14" tabIcon="analytics"></ion-tab>
+				<ion-tab [root]="daohang" tabTitle="导航" tabIcon="settings"></ion-tab>
+			</ion-tabs>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

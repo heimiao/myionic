@@ -1,0 +1,180 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>按钮(button)</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			基本用法
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button color="secondary">Secondary</button>
+			<button ion-button color="danger">Danger</button>
+			<button ion-button color="dark">Dark</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button color="light"&gt;Light&lt;/button&gt;<br />&lt;button ion-button&gt;Default&lt;/button&gt;<br />&lt;button ion-button color="secondary"&gt;Secondary&lt;/button&gt;<br />&lt;button ion-button color="danger"&gt;Danger&lt;/button&gt;<br />&lt;button ion-button color="dark"&gt;Dark&lt;/button&gt;
+					</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			圆角按钮
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button color="light" round>Light Round</button>
+			<button ion-button round>Primary Round</button>
+			<button ion-button color="secondary" round>Secondary Round</button>
+			<button ion-button color="danger" round>Danger Round</button>
+			<button ion-button color="dark" round>Dark Round</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button color="light" round&gt;Light Round&lt;/button&gt;<br />&lt;button ion-button round&gt;Primary Round&lt;/button&gt;<br />&lt;button ion-button color="secondary" round&gt;Secondary Round&lt;/button&gt;<br />&lt;button ion-button color="danger" round&gt;Danger Round&lt;/button&gt;<br />&lt;button ion-button color="dark" round&gt;Dark Round&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			组件中使用按钮
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item>
+					黑猫001
+					<button ion-button outline item-end icon-left>
+				      <ion-icon name="star"></ion-icon>
+				      黑喵
+				    </button>
+				</ion-item>
+				<ion-item>
+					黑猫002
+					<button ion-button outline item-end icon-left>
+				      <ion-icon name="star"></ion-icon>
+				      黑喵
+				    </button>
+				</ion-item>
+			</ion-list>
+			<ion-card>
+				<code> 
+					&lt;ion-list&gt;<br />  &lt;ion-item&gt;<br />    Left Icon Button<br />    &lt;button ion-button outline item-end icon-left&gt;<br />      &lt;ion-icon name="star"&gt;&lt;/ion-icon&gt;<br />      Left Icon<br />    &lt;/button&gt;<br />  &lt;/ion-item&gt;<br />&lt;/ion-list&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			带图标按钮
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button icon-left>
+			  <ion-icon name="home"></ion-icon>
+			  Left Icon
+			</button>
+			<button ion-button icon-right>
+			  Right Icon
+			  <ion-icon name="home"></ion-icon>
+			</button>
+			<button ion-button icon-only>
+			  <ion-icon name="home"></ion-icon>
+			</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button icon-left&gt;<br />			  &lt;ion-icon name="home"&gt;&lt;/ion-icon&gt;<br />			  Left Icon<br />			&lt;/button&gt;<br />			&lt;button ion-button icon-right&gt;<br />			  Right Icon<br />			  &lt;ion-icon name="home"&gt;&lt;/ion-icon&gt;<br />			&lt;/button&gt; <br />			&lt;button ion-button icon-only&gt;<br />			  &lt;ion-icon name="home"&gt;&lt;/ion-icon&gt;<br />			&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			块按钮
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button block>Block Button</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button block&gt;Block Button&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			按钮大小
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button small>Small</button>
+			<button ion-button>Default</button>
+			<button ion-button large>Large</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button small&gt;Small&lt;/button&gt;<br />&lt;button ion-button&gt;Default&lt;/button&gt;<br />&lt;button ion-button large&gt;Large&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			完整的按钮
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button block>Block Button</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button full&gt;Full Button&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			大纲样式
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button color="light" outline>Light Outline</button>
+			<button ion-button outline>Primary Outline</button>
+			<button ion-button color="secondary" outline>Secondary Outline</button>
+			<button ion-button color="danger" outline>Danger Outline</button>
+			<button ion-button color="dark" outline>Dark Outline</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button color="light" outline&gt;Light Outline&lt;/button&gt;<br />&lt;button ion-button outline&gt;Primary Outline&lt;/button&gt;<br />&lt;button ion-button color="secondary" outline&gt;Secondary Outline&lt;/button&gt;<br />&lt;button ion-button color="danger" outline&gt;Danger Outline&lt;/button&gt;<br />&lt;button ion-button color="dark" outline&gt;Dark Outline&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			清晰的风格
+		</ion-card-header>
+		<ion-card-content>
+			<button ion-button color="light" clear>Light Clear</button>
+			<button ion-button clear>Primary Clear</button>
+			<button ion-button color="secondary" clear>Secondary Clear</button>
+			<button ion-button color="danger" clear>Danger Clear</button>
+			<button ion-button color="dark" clear>Dark Clear</button>
+			<ion-card>
+				<code> 
+					&lt;button ion-button color="light" clear&gt;Light Clear&lt;/button&gt;<br />&lt;button ion-button clear&gt;Primary Clear&lt;/button&gt;<br />&lt;button ion-button color="secondary" clear&gt;Secondary Clear&lt;/button&gt;<br />&lt;button ion-button color="danger" clear&gt;Danger Clear&lt;/button&gt;<br />&lt;button ion-button color="dark" clear&gt;Dark Clear&lt;/button&gt;
+				</code>
+			</ion-card>
+			<a class="more" href="https://ionicframework.com/docs/components/#outline-buttons">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>

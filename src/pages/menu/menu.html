@@ -1,0 +1,87 @@
+<ion-menu [content]="mycontent" type="reveal" side="left">
+	<ion-content>
+		<ion-list>
+			<ion-list-header>
+				<h3>功能菜单项</h3>
+			</ion-list-header>
+			<ion-item>
+				<ion-icon ios="ios-mail" md="md-mail" item-left></ion-icon>
+				消息中心
+				<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
+			</ion-item>
+			<ion-item>
+				<ion-icon ios="ios-build" md="md-build" item-left></ion-icon>
+				音乐工具
+				<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
+			</ion-item>
+			<ion-item>
+				<ion-icon ios="ios-notifications-off" md="md-notifications-off" item-left></ion-icon>
+				<ion-label>个性彩铃</ion-label>
+				<ion-toggle checked="false"></ion-toggle>
+			</ion-item>
+			<ion-item>
+				<ion-icon ios="ios-wifi" md="md-wifi" item-left></ion-icon>
+				<ion-label>仅wify联网</ion-label>
+				<ion-toggle checked="false"></ion-toggle>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-menu>
+<div class="menuContainer" #mycontent>
+	<ion-header>
+		<ion-navbar>
+			<ion-title>侧滑菜单</ion-title>
+		</ion-navbar>
+	</ion-header>
+	<ion-content padding>
+		<button ion-button (click)="goBack()" full>返回上一页</button>
+		<button ion-button color="secondary" menuClose full>关闭菜单</button>
+		<button ion-button color="danger" (click)="openMenu()" full>打开菜单</button>
+		<button ion-button menuToggle full>Toggle Menu</button>
+		<table table>
+			<caption>输入属性</caption>
+			<tr>
+				<th>Attr</th>
+				<th>Type</th>
+				<th>Details</th>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td>any</td>
+				<td>菜单应该使用的内容元素的引用</td>
+			</tr>
+			<tr>
+				<td>enabled</td>
+				<td>boolean</td>
+				<td>如果为true，则菜单已启用。默认 true.</td>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>string</td>
+				<td>An id for the menu.</td>
+			</tr>
+			<tr>
+				<td>persistent</td>
+				<td>boolean</td>
+				<td>如果为true，菜单将保留在子页面上</td>
+			</tr>
+			<tr>
+				<td>side</td>
+				<td>string</td>
+				<td>菜单应该放置哪一侧。默认“左”</td>
+			</tr>
+			<tr>
+				<td>swipeEnabled</td>
+				<td>boolean</td>
+				<td>如果为true，则启用滑动菜单。默认为true</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td>string</td>
+				<td>菜单的滑动类型"overlay", "reveal", "push".</td>
+			</tr>
+		</table>
+	</ion-content>
+</div>
+
+<!--<ion-nav #mycontent [root]="rootPage"></ion-nav>-->

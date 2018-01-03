@@ -1,0 +1,396 @@
+<style type="text/css">
+	ion-grid {
+		border: 1px solid red;
+	}
+	
+	ion-col {
+		border: 1px solid green;
+	}
+</style>
+<ion-header>
+	<ion-navbar>
+		<ion-title>网格布局(grid)</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content>
+	<ion-card>
+		<ion-card-header>
+			<h5>自动布局</h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						1 of 2
+					</ion-col>
+					<ion-col>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						1 of 3
+					</ion-col>
+					<ion-col>
+						2 of 3
+					</ion-col>
+					<ion-col>
+						3 of 3
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						1 of 4
+					</ion-col>
+					<ion-col>
+						2 of 4
+					</ion-col>
+					<ion-col>
+						3 of 4
+					</ion-col>
+					<ion-col>
+						4 of 4
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h5>设置一个列宽</h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						1 of 3
+					</ion-col>
+					<ion-col col-8>
+						2 of 3 (col-8)
+					</ion-col>
+					<ion-col>
+						3 of 3
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						1 of 3
+					</ion-col>
+					<ion-col col-6>
+						2 of 3 (col-6)
+					</ion-col>
+					<ion-col>
+						3 of 3
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h5>可变宽度 <code>col-auto</code></h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						1 of 3
+					</ion-col>
+					<ion-col col-auto>
+						这一列是自动变宽的
+					</ion-col>
+					<ion-col>
+						3 of 3
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						1 of 4
+					</ion-col>
+					<ion-col>
+						2 of 4
+					</ion-col>
+					<ion-col col-auto>
+						<ion-input placeholder="这一列是自动变宽的"></ion-input>
+					</ion-col>
+					<ion-col>
+						4 of 4
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>自定义宽度比例 <code>col-*</code></h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-4>
+						1 of 4
+					</ion-col>
+					<ion-col col-2>
+						2 of 4
+					</ion-col>
+					<ion-col col-2>
+						3 of 4
+					</ion-col>
+					<ion-col col-4>
+						4 of 4
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>根据设备大小布局 <code>col-sm</code></h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-12 col-sm>
+						1 of 4
+					</ion-col>
+					<ion-col col-12 col-sm>
+						2 of 4
+					</ion-col>
+					<ion-col col-12 col-sm>
+						3 of 4
+					</ion-col>
+					<ion-col col-12 col-sm>
+						4 of 4
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>偏移量<code>offset-*</code></h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3 offset-4>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-md-3>
+						1 of 3
+					</ion-col>
+					<ion-col col-md-3>
+						2 of 3
+					</ion-col>
+					<ion-col col-md-3 offset-md-3>
+						3 of 3
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>重新排列<code>push-*</code><code>pull-*</code></h5>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-9 push-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3 pull-9>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-6 push-6>
+						1 of 3
+					</ion-col>
+					<ion-col col-3 pull-3>
+						2 of 3
+					</ion-col>
+					<ion-col col-3 pull-9>
+						3 of 3
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>垂直对齐  </h5>
+		</ion-card-header>
+		<ion-card-content>
+			<i> 行的属性 </i>
+			<br><code>align-items-start</code>
+			<br><code>align-items-center</code>
+			<br><code>align-items-end</code>
+			<ion-grid>
+				<ion-row align-items-start>
+					<ion-col>
+						1 of 4
+					</ion-col>
+					<ion-col>
+						2 of 4
+					</ion-col>
+					<ion-col>
+						3 of 4
+					</ion-col>
+					<ion-col>
+						4 of 4 <br>#<br>#<br>#
+					</ion-col>
+				</ion-row>
+				<ion-row align-items-center>
+					<ion-col>
+						1 of 4
+					</ion-col>
+					<ion-col>
+						2 of 4
+					</ion-col>
+					<ion-col>
+						3 of 4
+					</ion-col>
+					<ion-col>
+						4 of 4 <br>#<br>#<br>#
+					</ion-col>
+				</ion-row>
+				<ion-row align-items-end>
+					<ion-col>
+						1 of 4
+					</ion-col>
+					<ion-col>
+						2 of 4
+					</ion-col>
+					<ion-col>
+						3 of 4
+					</ion-col>
+					<ion-col>
+						4 of 4 <br>#<br>#<br>#
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<i>列的属性</i>
+			<br><code>align-self-start</code>
+			<br><code>align-self-center</code>
+			<br><code>align-self-end</code>
+			<ion-grid>
+				<ion-row>
+					<ion-col align-self-start>
+						<div>
+							1 of 4
+						</div>
+					</ion-col>
+					<ion-col align-self-center>
+						<div>
+							2 of 4
+						</div>
+					</ion-col>
+					<ion-col align-self-end>
+						<div>
+							3 of 4
+						</div>
+					</ion-col>
+					<ion-col>
+						<div>
+							4 of 4 <br>#<br>#<br>#
+						</div>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h5>水平居中</h5>
+		</ion-card-header>
+		<ion-card-content>
+			<i> 行的属性 </i>
+			<br><code>justify-content-start</code>
+			<br><code>justify-content-center</code>
+			<br><code>justify-content-end</code>
+			<br><code>justify-content-around</code>
+			<br><code>justify-content-between</code>
+			<ion-grid>
+				<ion-row justify-content-start>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row justify-content-center>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row justify-content-end>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row justify-content-around>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3>
+						2 of 2
+					</ion-col>
+				</ion-row>
+				<ion-row justify-content-between>
+					<ion-col col-3>
+						1 of 2
+					</ion-col>
+					<ion-col col-3>
+						2 of 2
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+			<code>
+			 </code>
+			<a class="more" href="https://ionicframework.com/docs/api/components/grid/Grid/">更多信息</a>
+		</ion-card-content>
+	</ion-card>
+</ion-content>
